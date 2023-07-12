@@ -24,23 +24,23 @@ const questions = [
     {
         type: "input",
         name: "text",
-        message: "Enter up to 3 characters for the logo text"
+        message: "Enter up to 3 characters for the logo text",
     },
     {
         type: "input",
         name: "color",
-        message: "Enter the color the text should be"
+        message: "Enter the color the text should be",
     },
     {
         type: "list",
         name: "shape",
         message: "Select a shape for the logo",
-        choices: ["Circle", "Square", "Triangle"]
+        choices: ["Circle", "Square", "Triangle"],
     },
     {
         type: "input",
         name: "fill",
-        message: "Enter the color the shape should be"
+        message: "Enter the color the shape should be",
     },
 ];
 let shape;
@@ -67,7 +67,7 @@ function init() {
                 break;
         }
 
-        let SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">{$logoText}
+        let SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">${logoText}
         <text x="150" y="170" font-size="50" text-anchor="middle" fill="${answers.color}">${answers.text}</text>
         </svg>`;
 
