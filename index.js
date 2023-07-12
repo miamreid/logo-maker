@@ -2,8 +2,7 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const { Triangle, Square, Circle } = require("./lib/shapes");
 
-let shape;
-let logoText = "";
+
 
 // class SVG {
 //     constructor() {
@@ -44,6 +43,8 @@ const questions = [
         message: "Enter the color the shape should be"
     },
 ];
+let shape;
+let logoText = "";
 
 function init() {
     return inquirer.prompt(questions)
@@ -66,8 +67,8 @@ function init() {
                 break;
         }
 
-        let SVG = `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="500" height="500">{$shapeText}
-        <text x="250" y="250" font-size="75" text-anchor="middle" fill="${answers.color}">${answers.text}</text>
+        let SVG = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">{$logoText}
+        <text x="150" y="170" font-size="50" text-anchor="middle" fill="${answers.color}">${answers.text}</text>
         </svg>`;
 
         return writeToFile("logo.svg", SVG);
