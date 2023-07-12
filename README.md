@@ -24,7 +24,7 @@ This app uses:<br />
 - FS
 - Jest
 
-3. **Staret the App** After installing dependencies and packages, run <code>node index.js</code> to initialize inquirer and begin creating your custom logo.
+3. **Start the App** After installing dependencies and packages, run <code>node index.js</code> to initialize inquirer and begin creating your custom logo.
 
 4. **Preview Logo** After answering all inquirer prompts, the logo will be saved to the "logo.svg" file.
 
